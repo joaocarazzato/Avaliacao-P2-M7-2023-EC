@@ -4,6 +4,10 @@
     --cinza-inteli: #D5D9DC;
 }
 
+h1{
+    color: white;
+}
+
 button{
     /* margin: 32px; */
     padding: 32px;
@@ -29,6 +33,7 @@ li {
     margin-bottom: 30px;
     background: var(--cinza-inteli);
     color: var(--cinza-inteli);
+    color:black
 }
 
 button {

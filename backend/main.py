@@ -1,15 +1,25 @@
 from fastapi import FastAPI, Body
 from fastapi.middleware.cors import CORSMiddleware
+from criar_banco import create_table
 
 import uvicorn
 import psycopg2
 
 # Constantes
-DB_USER = "meuuserawsrds"
+DB_USER = "postgres"
 DB_PASSWORD = "postgres"
-DB_HOST = "database-postgres.c36tibwlwhak.us-east-1.rds.amazonaws.com"
+DB_HOST = "database-prova.cw2ougivdfds.us-east-1.rds.amazonaws.com"
 DB_PORT = "5432"
 DB_NAME = "postgres"
+
+import sys
+if len(sys.argv) > 1 and sys.argv[1] == 'create_db':
+    print('Criando tabela...\n')
+    # cria o banco de dados
+    create_table()
+
+    print('Tabela criada.')
+    sys.exit(0)
 
 # Conexão com o banco
 con = psycopg2.connect(
