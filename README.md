@@ -55,7 +55,7 @@ Porém, percebi que meu código não estava funcionando, acabou que faltou uma l
 [...]
 ```
 
-Após isso, tive que subir duas EC2s, tanto para o frontend quanto o backend, ao fazer isso, tive que permitir as conexões de HTTP e HTTPS. Então, configurei primeiramente o backend, para que eu pudesse alterar o ip utilizado no frontend com mais facilidade. Para o backend, eu criei um dockerfile para facilitar o meu processo, e digitei os seguintes comandos:
+Após isso, tive que subir duas EC2s, tanto para o frontend quanto o backend, ao fazer isso, tive que permitir as conexões de HTTP e HTTPS. Então, configurei primeiramente o backend, utilizando também um IP Elástico, para que eu pudesse alterar o ip utilizado no frontend com mais facilidade. Para o backend, eu criei um dockerfile para facilitar o meu processo, e digitei os seguintes comandos:
 
 ```
 sudo apt update
