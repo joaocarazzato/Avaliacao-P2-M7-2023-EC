@@ -1,4 +1,4 @@
-var server_ip = "localhost:8000"
+var server_ip = "35.174.65.116"
 
 function addTask() {
   const taskInput = document.getElementById("taskInput");
